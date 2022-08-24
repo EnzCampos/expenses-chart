@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(247, 233, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.balance-div {
+  background-color: rgb(236, 117, 93);
+  width: 450px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  color: white;
+}
+
+.my-balance {
+  font-size: 16px;
+  margin-bottom: -12px;
+}
+
+.total-balance {
+  font-size: 26px;;
+}
+
+.chart-div {
+  background-color: whitesmoke;
+  padding: 30px;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.total {
+  border-top: 1px solid rgb(170, 166, 166);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grey {
+  color: rgb(170, 166, 166);
+}
+
+.last-month-total {
+  margin-bottom: -30px;
+  font-size: 15px;
+}
+
+.total-spent {
+  font-size: 40px;
+}
+
+.last-month-percentage {
+  text-align: end;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
