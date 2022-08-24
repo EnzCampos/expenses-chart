@@ -4,7 +4,7 @@ import data from './data.json'
 
 function App() {
   const balance = 921.48
-  const totalSpent = 478.33
+  let totalSpent = 0
   const [userData, setUserData] = React.useState({
     labels: data.map((data) => data.day),
     datasets: [{
@@ -15,6 +15,11 @@ function App() {
         hoverBackgroundColor: 'rgb(118, 181, 188)',
     }],
 })
+
+  for (let i=0; i < data.map((data) => data.amount).length; i++) {
+    totalSpent += data[i].amount
+  }
+
   return (
     <div className="App">
       <div className="balance-div">
@@ -27,7 +32,7 @@ function App() {
           <BarChart chartData={userData}/>
         </div>
         <div className="total">
-          <h4 className="last-month-total grey">Total this month</h4>
+          <h4 className="last-month-total grey">Total this week</h4>
           <div className="flex">
             <h2 className="total-spent">${totalSpent}</h2>
             <div className="last-month-comparison">
