@@ -1,10 +1,12 @@
 import React from "react";
 import BarChart from "./BarChart.js";
 import data from './data.json'
+import { ReactComponent as Logo } from "./logo.svg"
 
 function App() {
-  const balance = 921.48
-  let totalSpent = 0
+  const balance = 921.48;
+  let totalSpent = 0;
+
   const [userData, setUserData] = React.useState({
     labels: data.map((data) => data.day),
     datasets: [{
@@ -22,9 +24,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="balance-div">
-        <h3 className="my-balance">My balance</h3>
-        <h2 className="total-balance">${balance}</h2>
+      <div className="balance-div flex">
+        <div>
+          <h3 className="my-balance">My balance</h3>
+          <h2 className="total-balance">${balance}</h2>
+        </div>
+        <Logo className="logo"/>
       </div>
       <div className="chart-div">
         <h2 className="spending-text">Spending - Last 7 days</h2>

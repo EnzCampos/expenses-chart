@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  min-width: none;
 }
 
 code {
@@ -79,6 +80,10 @@ code {
   height: 300px;
 }
 
+.logo {
+  margin: 25px;
+}
+
 @media (max-width: 550px) {
   .balance-div {
     width: 70vw;
@@ -106,16 +111,30 @@ code {
   .spending-chart {
     margin-bottom: -15vh;
   }
+  .logo {
+    margin: 0px;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 400px) {
   .spending-chart {
     margin-bottom: -18vh;
   }
+  .logo {
+    margin: 0px;
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 300px) {
   .spending-chart {
     margin-bottom: -23vh;
+  }
+  .logo {
+    margin: 0px;
+    margin-right: -10px;
+    margin-top: 25px;
   }
 }
